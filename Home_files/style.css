@@ -1,0 +1,1654 @@
+/*
+*************************
+		FONT FAMILY
+*************************
+*/
+@font-face {
+    font-family: 'East Border';
+    src: url('../fonts/eastborder/EastBorder.woff2') format('woff2'),
+    url('../fonts/eastborder/EastBorder.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #1f1f25;
+    color: #ffdf00;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+#casino_bg {
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    background-color: #14151b;
+}
+
+.top_hdr_bg {
+    background-color: #14151b;
+    padding-top: 10px;
+}
+
+.news_feed_heading, .news_feed_para, .header_lang {
+    padding: 0;
+}
+
+.news_feed_heading span {
+    border: 1px solid #2f3045;
+    padding: 3px 10px;
+    margin-right: 3px;
+    color: white;
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.news_feed_heading span i {
+    padding-right: 1em;
+    color: white;
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header_lang {
+    text-align: right;
+}
+
+.header_lang a {
+    display: inline-block;
+    vertical-align: center;
+}
+
+.main_header {
+    padding: 10px 0;
+}
+
+.logo img {
+    position: relative;
+}
+
+.header_form form {
+    text-align: right;
+}
+
+.header_form form input, button {
+    background: #272834;
+    border: 1px solid #2f3045;
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+.header_form form input {
+    /* color: #3d3e58; */
+    color: #fff;
+}
+
+.header_form form button {
+    padding: 8px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.monetary {
+    font-weight: 700;
+}
+
+#wallet-applet ul li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #656565;
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+#wallet-applet ul li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+#wallet-applet .refresh {
+    color: white;
+    border: none;
+    padding: 0;
+    background: transparent;
+    outline: none;
+}
+
+#balance {
+    background-color: #1f1f25;
+    color: #fff;
+    display: inline-block;
+    padding: 0px 100px 0px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.line {
+    height: 1px;
+    background-image: linear-gradient(90deg, #14141e, #b9940a 50%, #14141e);
+
+}
+
+.main_navi {
+    /*height: 62px;*/
+    background-color: #22232b;
+}
+
+.footer_nav li {
+    display: inline-block;
+}
+
+.footer_nav li a {
+    display: block;
+    line-height: 62px;
+    color: #fff;
+    padding: 0 16px;
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.footer_nav li a:hover {
+    background: -webkit-linear-gradient(90deg, #fcc200, #ffdf00 80%, #fcc200);
+    -webkit-text-fill-color: #724c04;
+}
+
+nav {
+    display: block;
+}
+
+.main_navi .active {
+    background: -webkit-linear-gradient(45deg, #996515, #ffdf00, #996515);
+    -webkit-text-fill-color: #724c04;
+}
+
+.menu {
+    display: block;
+    margin-bottom: 0;
+}
+
+.menu li {
+    display: inline-block;
+    z-index: 100;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out 0s;
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-right: 1px solid;
+    border-image: linear-gradient(to bottom, #14141e 0%, #d4af37, #14141e 100%);
+}
+
+.menu li a:hover, .menu li:hover > a {
+    background: -webkit-linear-gradient(45deg, #996515, #ffdf00, #996515);
+    -webkit-text-fill-color: #724c04;
+}
+
+.menu ul {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 99;
+    transform: translate(0, 20px);
+    transition: all 0.2s ease-out;
+}
+
+.menu ul:after {
+    bottom: 100%;
+    left: 13%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #22232b;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.menu ul li {
+    display: inline-block;
+    float: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    font-weight: normal;
+    display: block;
+
+}
+
+.menu ul li a:hover, .menu ul li:hover > a {
+    /* background: #262630; */
+    color: #fff;
+}
+
+.menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sub-menu {
+    background-color: #22232b;
+}
+
+.sub-menu li a > img {
+    width: 120px;
+}
+
+.sub-menu li a > span {
+    display: block;
+    padding-top: 10px;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    right: 0;
+    padding: 15px 0 6px 0;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+.responsive_nav {
+    display: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: #14151b;
+
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    top: 0;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    overflow-y: scroll;
+
+}
+
+
+#menu li a {
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out 0s;
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid #fcc200;
+    line-height: 30px;
+    padding: 5px 10px;
+    transition: .3s;
+    -webkit-text-fill-color: #fcc200;
+}
+
+#menu li a:hover {
+    background: -webkit-linear-gradient(45deg, #996515, #ffdf00, #996515);
+    -webkit-text-fill-color: #724c04;
+    font-weight: bold;
+}
+
+#menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .menu ul {
+        top: 37px;
+    }
+
+    .menu li a {
+    }
+}
+
+/* START IMAGE GRID */
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    max-height: 870px;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.gallery .pics:hover {
+    transform: scale(1.025);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+/* END OF IMAGE GRID */
+
+/* BEGIN ODOMETER */
+.jackpot {
+    text-align: center;
+}
+
+.jackpot p {
+    font-size: 30px;
+}
+
+.jackpot .odometer {
+    font-size: 70px;
+}
+
+.jackpot .title {
+    font-family: "Rye", monospace;
+    padding: 0.15em;
+    color: #FCA311;
+    font-size: 50px;
+}
+
+/* END OF ODOMETER */
+
+
+.join_box {
+    border-right: 1px solid;
+    border-top: 0; /*needed for safari*/
+    border-left: 0; /*needed for safari*/
+    border-bottom: 0; /*needed for safari*/
+    border-image: linear-gradient(to bottom, #14141e 0%, #d4af37, #14141e 100%) 1;
+    padding: 20px;
+}
+
+.join_box:last-child {
+    border: none;
+}
+
+.join_box_icon {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.join_box_icon img {
+    width: 60px;
+}
+
+.join_box_icon2 {
+    display: none;
+
+}
+
+.join_box_icon2 img {
+    width: 50px;
+    padding-top: 10px;
+
+}
+
+.join_box_text_para h4 > span {
+    display: none;
+    font-family: 'East Border';
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-right: 10px;
+
+}
+
+.join_box_text {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.join_box_text_nmbr, .join_box_text_para, .join_box_icon2 {
+    color: #fff;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.join_box:hover .join_box_text_nmbr {
+    color: #d0ac36;
+}
+
+.join_box:hover .join_box_text_para {
+    color: #d0ac36;
+}
+
+.join_box:hover .join_box_text_para p {
+    color: #d0ac36;
+}
+
+.join_box_text_nmbr {
+    width: 30%;
+}
+
+.join_box_text_para {
+    width: 70%;
+}
+
+.join_box_text_nmbr span {
+    font-size: 76px;
+    font-family: 'East Border';
+    font-style: italic;
+    line-height: 57px;
+}
+
+.join_box_text_para h4 {
+    padding-left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 9px;
+    margin-bottom: 5px;
+
+}
+
+.join_box_text_para p {
+    padding-left: 20px;
+    border: none;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.user_stati_heading h5 {
+    display: none;
+}
+
+.user_stati_img {
+    display: none;
+}
+
+.user_stati_img2 {
+    display: block;
+}
+
+/*
+*************************
+	statistics section
+*************************
+*/
+
+.user_stati {
+    margin-top: 90px;
+    color: #fff;
+    border: 1px solid #474966;
+    padding: 15px;
+    height: 140px;
+    line-height: 30px;
+}
+
+.user_stati h4 {
+    margin-bottom: 0px;
+    line-height: 50px;
+}
+
+.user_stati_heading h4 {
+    background: -webkit-linear-gradient(#d4af37, #996515, #996515, #fede00, #996515, #ffdf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.user_stati h5 {
+
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'East Border';
+    font-size: 32px;
+    background: -webkit-linear-gradient(#d4af37, #996515, #996515, #fede00, #996515, #ffdf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.user_stati h5 p {
+    margin-top: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: #fff;
+
+}
+
+.user_stati_time h4 {
+    font-family: 'East Border';
+    font-size: 56px;
+    text-align: right;
+}
+
+.user_stati_time h4 > span {
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+.user_stati h6 {
+    font-style: italic;
+}
+
+.progress {
+    border: 1px solid #daa520;
+    background-color: transparent;
+}
+
+.bg-warning {
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #D4AF37, #996515 50%, #d4af37);
+    height: 10px;
+}
+
+footer {
+    background-color: #14151b;
+    padding-top: 40px;
+}
+
+footer .line {
+    /* margin: 40px 0; */
+}
+
+.footer_nav {
+    display: block;
+    text-align: center;
+}
+
+.footer_nav li a {
+    line-height: 12px;
+}
+
+.footer_nav li a:hover {
+    background: transparent;
+}
+
+.footer_nav li {
+    border-right: 1px solid #656565;
+}
+
+.footer_nav li:last-child {
+    border: none;
+}
+
+.foo_copyright {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+    color: #656565;
+    margin-top: 40px;
+}
+
+.foo_copyright p {
+    border: none;
+    color: #656565;
+    padding: 0 8%;
+
+}
+
+.foo_cnt {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.foo_cnt li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.foo_cnt h5 {
+    margin: 0;
+    color: #fff;
+}
+
+.foo_cnt img {
+    width: 40px;
+    margin-bottom: 1em;
+}
+
+#footer-provider {
+    text-align: center;
+}
+
+#footer-provider i.provider {
+    margin: 5px;
+}
+
+#footer-provider i.provider, #footer-nav i.provider, #product-filter i.provider, #product-body .card-game .card-top i.provider, #home-download .download-provider i.provider {
+    background: url("http://beta.5g88.net/static/images/sprite/partners.png") no-repeat;
+    display: inline-block;
+    height: 38px;
+    background-position-y: 0
+}
+
+#footer-provider i.provider.provider-OEWK, #footer-nav i.provider.provider-OEWK, #product-filter i.provider.provider-OEWK, #product-body .card-game .card-top i.provider.provider-OEWK, #home-download .download-provider i.provider.provider-OEWK {
+    background-position-x: -5px;
+    width: 114px
+}
+
+#footer-provider i.provider.provider-XPGG, #footer-nav i.provider.provider-XPGG, #product-filter i.provider.provider-XPGG, #product-body .card-game .card-top i.provider.provider-XPGG, #home-download .download-provider i.provider.provider-XPGG {
+    background-position-x: -136px;
+    width: 86px
+}
+
+#footer-provider i.provider.provider-AAGG, #footer-nav i.provider.provider-AAGG, #product-filter i.provider.provider-AAGG, #product-body .card-game .card-top i.provider.provider-AAGG, #home-download .download-provider i.provider.provider-AAGG, #footer-provider i.provider.provider-AGGS, #footer-nav i.provider.provider-AGGS, #product-filter i.provider.provider-AGGS, #product-body .card-game .card-top i.provider.provider-AGGS, #home-download .download-provider i.provider.provider-AGGS {
+    background-position-x: -238px;
+    width: 95px
+}
+
+#footer-provider i.provider.provider-GMPL, #footer-nav i.provider.provider-GMPL, #product-filter i.provider.provider-GMPL, #product-body .card-game .card-top i.provider.provider-GMPL, #home-download .download-provider i.provider.provider-GMPL {
+    background-position-x: -352px;
+    width: 144px
+}
+
+#footer-provider i.provider.provider-PTFC, #footer-nav i.provider.provider-PTFC, #product-filter i.provider.provider-PTFC, #product-body .card-game .card-top i.provider.provider-PTFC, #home-download .download-provider i.provider.provider-PTFC, #footer-provider i.provider.provider-PYTH, #footer-nav i.provider.provider-PYTH, #product-filter i.provider.provider-PYTH, #product-body .card-game .card-top i.provider.provider-PYTH, #home-download .download-provider i.provider.provider-PYTH {
+    background-position-x: -518px;
+    width: 120px
+}
+
+#footer-provider i.provider.provider-MGTG, #footer-nav i.provider.provider-MGTG, #product-filter i.provider.provider-MGTG, #product-body .card-game .card-top i.provider.provider-MGTG, #home-download .download-provider i.provider.provider-MGTG, #footer-provider i.provider.provider-MOGG, #footer-nav i.provider.provider-MOGG, #product-filter i.provider.provider-MOGG, #product-body .card-game .card-top i.provider.provider-MOGG, #home-download .download-provider i.provider.provider-MOGG {
+    background-position-x: -657px;
+    width: 126px
+}
+
+#footer-provider i.provider.provider-POKR, #footer-nav i.provider.provider-POKR, #product-filter i.provider.provider-POKR, #product-body .card-game .card-top i.provider.provider-POKR, #home-download .download-provider i.provider.provider-POKR {
+    background-position-x: -810px;
+    width: 123px
+}
+
+#footer-provider i.provider.provider-PSBT, #footer-nav i.provider.provider-PSBT, #product-filter i.provider.provider-PSBT, #product-body .card-game .card-top i.provider.provider-PSBT, #home-download .download-provider i.provider.provider-PSBT {
+    background-position-x: -960px;
+    width: 91px
+}
+
+#footer-provider i.provider.provider-GLGG, #footer-nav i.provider.provider-GLGG, #product-filter i.provider.provider-GLGG, #product-body .card-game .card-top i.provider.provider-GLGG, #home-download .download-provider i.provider.provider-GLGG {
+    background-position-x: -1081px;
+    width: 99px
+}
+
+#footer-provider i.provider.provider-JOKR, #footer-nav i.provider.provider-JOKR, #product-filter i.provider.provider-JOKR, #product-body .card-game .card-top i.provider.provider-JOKR, #home-download .download-provider i.provider.provider-JOKR {
+    background-position-x: -1201px;
+    width: 103px
+}
+
+#footer-provider i.provider.provider-OPUS, #footer-nav i.provider.provider-OPUS, #product-filter i.provider.provider-OPUS, #product-body .card-game .card-top i.provider.provider-OPUS, #home-download .download-provider i.provider.provider-OPUS {
+    background-position-x: -1326px;
+    width: 137px
+}
+
+#footer-provider i.provider.provider-ALBT, #footer-nav i.provider.provider-ALBT, #product-filter i.provider.provider-ALBT, #product-body .card-game .card-top i.provider.provider-ALBT, #home-download .download-provider i.provider.provider-ALBT {
+    background-position-x: -1478px;
+    width: 60px
+}
+
+#footer-provider i.provider.provider-ISDN, #footer-nav i.provider.provider-ISDN, #product-filter i.provider.provider-ISDN, #product-body .card-game .card-top i.provider.provider-ISDN, #home-download .download-provider i.provider.provider-ISDN {
+    background-position-x: -1558px;
+    width: 62px
+}
+
+#footer-provider i.provider.provider-UNGM, #footer-nav i.provider.provider-UNGM, #product-filter i.provider.provider-UNGM, #product-body .card-game .card-top i.provider.provider-UNGM, #home-download .download-provider i.provider.provider-UNGM {
+    background-position-x: -1642px;
+    width: 84px
+}
+
+#footer-provider i.provider.provider-GDDN, #footer-nav i.provider.provider-GDDN, #product-filter i.provider.provider-GDDN, #product-body .card-game .card-top i.provider.provider-GDDN, #home-download .download-provider i.provider.provider-GDDN {
+    background-position-x: -1747px;
+    width: 103px
+}
+
+#footer-provider i.provider.provider-IDNP, #footer-nav i.provider.provider-IDNP, #product-filter i.provider.provider-IDNP, #product-body .card-game .card-top i.provider.provider-IDNP, #home-download .download-provider i.provider.provider-IDNP {
+    background-position-x: -1866px;
+    width: 128px
+}
+
+#footer-provider i.provider.provider-STTE, #footer-nav i.provider.provider-STTE, #product-filter i.provider.provider-STTE, #product-body .card-game .card-top i.provider.provider-STTE, #home-download .download-provider i.provider.provider-STTE {
+    background-position-x: -2018px;
+    width: 77px
+}
+
+#footer-provider i.provider.provider-WGFT, #footer-nav i.provider.provider-WGFT, #product-filter i.provider.provider-WGFT, #product-body .card-game .card-top i.provider.provider-WGFT, #home-download .download-provider i.provider.provider-WGFT {
+    background-position-x: -2113px;
+    width: 99px
+}
+
+#footer-provider i.provider.provider-N2LV, #footer-nav i.provider.provider-N2LV, #product-filter i.provider.provider-N2LV, #product-body .card-game .card-top i.provider.provider-N2LV, #home-download .download-provider i.provider.provider-N2LV {
+    background-position-x: -2242px;
+    width: 88px
+}
+
+#footer-provider i.provider.provider-CSTS, #footer-nav i.provider.provider-CSTS, #product-filter i.provider.provider-CSTS, #product-body .card-game .card-top i.provider.provider-CSTS, #home-download .download-provider i.provider.provider-CSTS {
+    background-position-x: -2362px;
+    width: 119px
+}
+
+#footer-provider i.provider.provider-SOTE, #footer-nav i.provider.provider-SOTE, #product-filter i.provider.provider-SOTE, #product-body .card-game .card-top i.provider.provider-SOTE, #home-download .download-provider i.provider.provider-SOTE {
+    background-position-x: -2505px;
+    width: 31px
+}
+
+#footer-provider i.provider.provider-EBET, #footer-nav i.provider.provider-EBET, #product-filter i.provider.provider-EBET, #product-body .card-game .card-top i.provider.provider-EBET, #home-download .download-provider i.provider.provider-EBET {
+    background-position-x: -2556px;
+    width: 73px
+}
+
+#footer-provider i.provider.provider-BBIN, #footer-nav i.provider.provider-BBIN, #product-filter i.provider.provider-BBIN, #product-body .card-game .card-top i.provider.provider-BBIN, #home-download .download-provider i.provider.provider-BBIN {
+    background-position-x: -2650px;
+    width: 60px
+}
+
+#footer-provider i.provider.provider-OEGD, #footer-nav i.provider.provider-OEGD, #product-filter i.provider.provider-OEGD, #product-body .card-game .card-top i.provider.provider-OEGD, #home-download .download-provider i.provider.provider-OEGD {
+    background-position-x: -2732px;
+    width: 89px
+}
+
+#footer-provider i.provider.provider-KYGG, #footer-nav i.provider.provider-KYGG, #product-filter i.provider.provider-KYGG, #product-body .card-game .card-top i.provider.provider-KYGG, #home-download .download-provider i.provider.provider-KYGG {
+    background-position-x: -2837px;
+    width: 94px
+}
+
+#footer-provider i.provider.provider-KAGG, #footer-nav i.provider.provider-KAGG, #product-filter i.provider.provider-KAGG, #product-body .card-game .card-top i.provider.provider-KAGG, #home-download .download-provider i.provider.provider-KAGG {
+    background-position-x: -2949px;
+    width: 70px
+}
+
+#footer-provider i.provider.provider-GNDE, #footer-nav i.provider.provider-GNDE, #product-filter i.provider.provider-GNDE, #product-body .card-game .card-top i.provider.provider-GNDE, #home-download .download-provider i.provider.provider-GNDE {
+    background-position-x: -3036px;
+    width: 65px
+}
+
+#footer-provider i.provider.provider-HBNR, #footer-nav i.provider.provider-HBNR, #product-filter i.provider.provider-HBNR, #product-body .card-game .card-top i.provider.provider-HBNR, #home-download .download-provider i.provider.provider-HBNR {
+    background-position-x: -3123px;
+    width: 144px
+}
+
+#footer-provider i.provider.provider-OTGG, #footer-nav i.provider.provider-OTGG, #product-filter i.provider.provider-OTGG, #product-body .card-game .card-top i.provider.provider-OTGG, #home-download .download-provider i.provider.provider-OTGG, #footer-provider i.provider.provider-OTGM, #footer-nav i.provider.provider-OTGM, #product-filter i.provider.provider-OTGM, #product-body .card-game .card-top i.provider.provider-OTGM, #home-download .download-provider i.provider.provider-OTGM {
+    background-position-x: -3287px;
+    width: 78px
+}
+
+#footer-provider i.provider.provider-ACTT, #footer-nav i.provider.provider-ACTT, #product-filter i.provider.provider-ACTT, #product-body .card-game .card-top i.provider.provider-ACTT, #home-download .download-provider i.provider.provider-ACTT {
+    background-position-x: -3384px;
+    width: 44px
+}
+
+#footer-provider i.provider.provider-CTBT, #footer-nav i.provider.provider-CTBT, #product-filter i.provider.provider-CTBT, #product-body .card-game .card-top i.provider.provider-CTBT, #home-download .download-provider i.provider.provider-CTBT {
+    background-position-x: -3445px;
+    width: 93px
+}
+
+#footer-provider i.provider.provider-DMGG, #footer-nav i.provider.provider-DMGG, #product-filter i.provider.provider-DMGG, #product-body .card-game .card-top i.provider.provider-DMGG, #home-download .download-provider i.provider.provider-DMGG {
+    background-position-x: -3560px;
+    width: 52px
+}
+
+#footer-provider i.provider.provider-SBOB, #footer-nav i.provider.provider-SBOB, #product-filter i.provider.provider-SBOB, #product-body .card-game .card-top i.provider.provider-SBOB, #home-download .download-provider i.provider.provider-SBOB {
+    background-position-x: -3635px;
+    width: 108px
+}
+
+#footer-provider i.provider.provider-WMCO, #footer-nav i.provider.provider-WMCO, #product-filter i.provider.provider-WMCO, #product-body .card-game .card-top i.provider.provider-WMCO, #home-download .download-provider i.provider.provider-WMCO {
+    background-position-x: -3767px;
+    width: 32px
+}
+
+#footer-provider i.provider.provider-EVOP, #footer-nav i.provider.provider-EVOP, #product-filter i.provider.provider-EVOP, #product-body .card-game .card-top i.provider.provider-EVOP, #home-download .download-provider i.provider.provider-EVOP {
+    background-position-x: -3815px;
+    width: 89px
+}
+
+#footer-provider i.provider.provider-NOEK, #footer-nav i.provider.provider-NOEK, #product-filter i.provider.provider-NOEK, #product-body .card-game .card-top i.provider.provider-NOEK, #home-download .download-provider i.provider.provider-NOEK {
+    background-position-x: -3932px;
+    width: 66px
+}
+
+#footer-provider i.provider.provider-MGTE, #footer-nav i.provider.provider-MGTE, #product-filter i.provider.provider-MGTE, #product-body .card-game .card-top i.provider.provider-MGTE, #home-download .download-provider i.provider.provider-MGTE {
+    background-position-x: -4029px;
+    width: 149px
+}
+
+#footer-provider i.provider.provider-OSGS, #footer-nav i.provider.provider-OSGS, #product-filter i.provider.provider-OSGS, #product-body .card-game .card-top i.provider.provider-OSGS, #home-download .download-provider i.provider.provider-OSGS {
+    background-position-x: -4209px;
+    width: 77px
+}
+
+#footer-provider i.provider.provider-SNCY, #footer-nav i.provider.provider-SNCY, #product-filter i.provider.provider-SNCY, #product-body .card-game .card-top i.provider.provider-SNCY, #home-download .download-provider i.provider.provider-SNCY {
+    background-position-x: -4313px;
+    width: 84px
+}
+
+#footer-provider i.provider.provider-SEGG, #footer-nav i.provider.provider-SEGG, #product-filter i.provider.provider-SEGG, #product-body .card-game .card-top i.provider.provider-SEGG, #home-download .download-provider i.provider.provider-SEGG {
+    background-position-x: -4416px;
+    width: 151px
+}
+
+#footer-provider i.provider.provider-CLOE, #footer-nav i.provider.provider-CLOE, #product-filter i.provider.provider-CLOE, #product-body .card-game .card-top i.provider.provider-CLOE, #home-download .download-provider i.provider.provider-CLOE {
+    background-position-x: -4584px;
+    width: 105px
+}
+
+#footer-provider i.provider.provider-ENGG, #footer-nav i.provider.provider-ENGG, #product-filter i.provider.provider-ENGG, #product-body .card-game .card-top i.provider.provider-ENGG, #home-download .download-provider i.provider.provider-ENGG {
+    background-position-x: -4722px;
+    width: 169px
+}
+
+#footer-provider i.provider.provider-SAGG, #footer-nav i.provider.provider-SAGG, #product-filter i.provider.provider-SAGG, #product-body .card-game .card-top i.provider.provider-SAGG, #home-download .download-provider i.provider.provider-SAGG {
+    background-position-x: -5891px;
+    width: 74px
+}
+
+#footer-provider i.provider.provider-SBTH, #footer-nav i.provider.provider-SBTH, #product-filter i.provider.provider-SBTH, #product-body .card-game .card-top i.provider.provider-SBTH, #home-download .download-provider i.provider.provider-SBTH {
+    background-position-x: -6202px;
+    width: 75px
+}
+
+#footer-provider i.provider.provider-PUSS, #footer-nav i.provider.provider-PUSS, #product-filter i.provider.provider-PUSS, #product-body .card-game .card-top i.provider.provider-PUSS, #home-download .download-provider i.provider.provider-PUSS {
+    background-position-x: -6522px;
+    width: 59px
+}
+
+#footer-provider i.provider.provider-HOGG, #footer-nav i.provider.provider-HOGG, #product-filter i.provider.provider-HOGG, #product-body .card-game .card-top i.provider.provider-HOGG, #home-download .download-provider i.provider.provider-HOGG {
+    background-position-x: -6673px;
+    width: 85px
+}
+
+#product-filter button.is-active i.provider, #product-filter button:hover i.provider {
+    background-position-y: -39px
+}
+
+footer #footer-bank i {
+    background: url("http://beta.5g88.net/static/images/sprite/banks.png") no-repeat;
+    display: inline-block
+}
+
+footer #footer-bank i.bank-myr {
+    height: 29px;
+    margin: 5px 10px
+}
+
+footer #footer-bank i.bank-myr.bank-ocbc {
+    background-position: 0 -2px;
+    width: 117px
+}
+
+footer #footer-bank i.bank-myr.bank-hongleong {
+    background-position: -145px -2px;
+    width: 134px
+}
+
+footer #footer-bank i.bank-myr.bank-maybank {
+    background-position: -307px -2px;
+    width: 86px
+}
+
+footer #footer-bank i.bank-myr.bank-public {
+    background-position: -429px -2px;
+    width: 127px
+}
+
+footer #footer-bank i.bank-myr.bank-cimb {
+    background-position: -587px -2px;
+    width: 91px
+}
+
+footer #footer-bank i.bank-myr.bank-ambank {
+    background-position: -715px -2px;
+    width: 106px
+}
+
+footer #footer-bank i.bank-myr.bank-hsbc {
+    background-position: -859px -2px;
+    width: 116px
+}
+
+footer #footer-bank i.bank-myr.bank-rhb {
+    background-position: -992px -2px;
+    width: 64px
+}
+
+footer #footer-bank i.bank-myr.bank-bimb {
+    background-position: -1076px -2px;
+    width: 114px
+}
+
+footer #footer-bank i.bank-myr.bank-bsn {
+    background-position: -1207px -4px;
+    width: 62px
+}
+
+footer #footer-bank i.bank-idr {
+    height: 31px;
+    margin: 5px 30px
+}
+
+footer #footer-bank i.bank-idr.bank-bca {
+    background-position: -1px -32px;
+    width: 90px
+}
+
+footer #footer-bank i.bank-idr.bank-mandiri {
+    background-position: -112px -31px;
+    width: 97px
+}
+
+footer #footer-bank i.bank-idr.bank-bni {
+    background-position: -232px -34px;
+    width: 86px
+}
+
+footer #footer-bank i.bank-idr.bank-bri {
+    background-position: -341px -33px;
+    width: 138px
+}
+
+footer #footer-bank i.bank-idr.bank-danamon {
+    background-position: -505px -34px;
+    width: 104px
+}
+
+footer #footer-bank i.bank-thb {
+    height: 27px;
+    margin: 5px 30px
+}
+
+footer #footer-bank i.bank-thb.bank-bangkok {
+    background-position: -2px -66px;
+    width: 78px
+}
+
+footer #footer-bank i.bank-thb.bank-krungthai {
+    background-position: -106px -66px;
+    width: 108px
+}
+
+footer #footer-bank i.bank-thb.bank-siam {
+    background-position: -240px -66px;
+    width: 74px
+}
+
+footer #footer-bank i.bank-thb.bank-kasikorn {
+    background-position: -335px -66px;
+    width: 109px
+}
+
+footer #footer-bank i.bank-thb.bank-krungsri {
+    background-position: -466px -66px;
+    width: 136px
+}
+
+footer #footer-bank i.bank-thb.bank-thanachart {
+    background-position: -618px -66px;
+    width: 105px
+}
+
+footer #footer-bank i.bank-thb.bank-tmb {
+    background-position: -738px -66px;
+    width: 54px
+}
+
+footer #footer-bank i.bank-thb.bank-government-savings {
+    background-position: -809px -66px;
+    width: 79px
+}
+
+footer #footer-bank i.bank-vnd.bank-donga {
+    background-position: -2px -98px;
+    width: 128px
+}
+
+footer #footer-bank i.bank-vnd.bank-acb {
+    background-position: -155px -98px;
+    width: 48px
+}
+
+footer #footer-bank i.bank-vnd.bank-vietin {
+    background-position: -226px -98px;
+    width: 101px
+}
+
+footer #footer-bank i.bank-vnd.bank-sacom {
+    background-position: -343px -98px;
+    width: 132px
+}
+
+footer #footer-bank i.bank-vnd.bank-vietcom {
+    background-position: -490px -98px;
+    width: 76px
+}
+
+footer #footer-bank i.bank-vnd.bank-techcom {
+    background-position: -591px -101px;
+    width: 139px
+}
+
+.dwnlod_bx {
+    background-color: #14151b;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.dwnlod_bx .dwnlod_bx_main_hdng h4, .dwnlod_img_bx_hdng h4 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #eea407;
+    background: -webkit-linear-gradient(#d4af37, #996515, #996515, #fede00, #996515, #ffdf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 14px;
+}
+
+.dwnlod_img_bx_hdng {
+    background-color: #2F2F2F;
+    padding: 5px;
+    border-left: 3px solid #937A1E;
+    text-align: center;
+}
+
+.dwnlod_img_bx_hdng h4 {
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.dwnlod_img_bx {
+    height: 130px;
+    background-image: url(../images/dwnld_bx_bg1.png);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dwnlod_bx_btn {
+    margin-top: 20px;
+    padding: 5px;
+    padding-bottom: 100px;
+}
+
+.dwnlod_bx_btn_icn_txt p {
+    color: #fff;
+    margin: 0;
+}
+
+.dwnlod_bx_btn_icn_txt a {
+    border: 1px solid #d7b11e;
+    padding: 5px 15px;
+    background-image: linear-gradient(#14141e, #656565 10%, #14141e 60%);
+    color: #d7b11e;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: linear .3s;
+    font-size: 12px;
+}
+
+.dwnlod_bx_btn_icn_txt a:hover {
+    background-image: linear-gradient(45deg, #996515, #ffdf00, #996515);
+    color: #000;
+}
+
+.deposite_sidebar, .dep_det_bx {
+    background-color: #1B1B1D;
+    border-radius: 5px;
+}
+
+.deposite_sidebar2 {
+    margin-top: 10px;
+}
+
+.deposite_sidebar2 ul li {
+    border-bottom: 1px dashed #595959;
+    line-height: 40px;
+}
+
+.deposite_sidebar2 ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    padding: 0px 10px;
+    transition: linear .3s;
+    display: block;
+}
+
+.deposite_sidebar2 ul li a:hover {
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-left: 2px solid #FFD703;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.deposite_sidebar2 ul li:last-child {
+    border: none !important;
+    margin-top: auto !important;
+}
+
+.deposite_sidebar {
+    padding: 1em;
+}
+
+.deposite_sidebar h4 {
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.deposite_sidebar ul li {
+    color: #fff;
+}
+
+.deposite_sidebar ul li:last-child {
+    border-top: 1px solid #595959;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.deposite_sidebar ul li > span {
+    float: right;
+    box-sizing: border-box;
+}
+
+.dep_det_bx {
+    background-color: #1B1B1D;
+    padding: 1rem;
+}
+
+.dep_det_bx label {
+    color: white;
+}
+
+.dep_det_bx h3, .dep_det_bx h4, .dep_det_bx h5 {
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 0;
+}
+
+.dep_det_bx .form-check-label {
+    margin-left: 2rem;
+}
+
+.dep_det_bx .card {
+    padding: 1rem;
+    color: white;
+}
+
+.dep_det_bx h3, .dep_det_bx h6 {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
+.dep_det_bx .card.pending-deposit {
+    background-color: #F87930;
+}
+
+.dep_det_bx .card.pending-withdrawal {
+    background-color: #1D7F5E;
+}
+
+.dep_det_bx .backtowallet {
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin: auto;
+    padding-left: 2rem;
+}
+
+.dep_det_inr_bx {
+    background-color: #2A2A2C;
+    border-left: 2px solid #FFD703;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+.game_bx .card {
+    background-color: transparent;
+}
+
+.game_bx .card .card-block p {
+    font-family: monospace;
+}
+
+.game_bx .card-footer {
+    background-color: #2A2A2C;
+}
+
+.dep_det_inr_bx input[type="text"] {
+    padding: 5px;
+    border: none;
+}
+
+.dep_det_inr_bx h5 {
+    background: -webkit-linear-gradient(119deg, #fcc200 10%, #ffdf00 80%, #fcc200 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.dep_det_inr_bx ul li {
+    color: #fff;
+}
+
+.dep_det_inr_bx ul li > span {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.dep_det_inr_btn {
+    box-sizing: border-box;
+    padding: 5px 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-image: linear-gradient(#14141e, #656565 10%, #14141e 60%);
+    color: #d7b11e;
+    text-transform: uppercase;
+}
+
+.dep_det_inr_btn:hover {
+    background-image: linear-gradient(45deg, #996515, #ffdf00, #996515);
+    color: #000;
+}
+
+.nav-tabs .nav-link.active {
+    color: #464a4c;
+    background-color: #1B1B1D;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.sidebar_social {
+    position: fixed;
+    right: 0;
+    background: #0e0e10;
+    top: 30%;
+    padding: 10px;
+    border: 2px solid #eea407;
+    border-right: 0px solid transparent;
+    border-radius: 4px 0 0 4px;
+    z-index: 10;
+}
+
+.sidebar_social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar_social ul li a > img {
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar_social ul li:first-child {
+    margin-top: 10px;
+}
+
+.sidebar_social ul li:last-child {
+    margin-bottom: 10px;
+}
+
+.sidebar_social ul li {
+    line-height: 30px;
+    height: 20px !important;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.side_social2 {
+    opacity: 0;
+    position: relative;
+    bottom: 20px;
+}
+
+.sidebar_social ul li a:hover img.side_social2 {
+    opacity: 1;
+}
+
+.sidebar_social ul li a:hover img.side_social1 {
+    opacity: 0;
+}
+
+.table thead {
+    background-color: #22232b;
+}
+
+/*
+*********************************************************************
+                            *_RESPONSIVE_*
+*********************************************************************
+*/
+@media screen and (max-width: 1200px) {
+    header {
+        height: auto;
+    }
+
+    /* .casi_platfrm_box:hover .casi_platfrm_box_lgo img {
+        top: 50% !important;
+    } */
+}
+
+@media screen and (max-width: 992px) {
+    .back-account {
+        width: 100%;
+    }
+
+    .transaction-history {
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+
+    .logo img {
+        bottom: 0;
+        height: 60px;
+    }
+
+    .header_form form {
+        margin-top: 20px;
+    }
+
+    .menu li a {
+        padding: 20px 10px
+    }
+
+    .join_box_text_nmbr span {
+        font-size: 56px;
+        line-height: 37px;
+    }
+
+    .join_box_text {
+        width: 95%;
+    }
+
+    .join_box_text_para h4 {
+        font-size: 16px;
+    }
+
+    .join_box_text_para p {
+        font-size: 12px;
+    }
+
+    .user_stati {
+        height: auto;
+    }
+
+    .user_stati_time h4 {
+        text-align: left;
+    }
+
+    /*.casi_platfrm_box:hover .casi_plat_img {
+        transform: scale(1.5) translate(10px,24px);
+    }*/
+    .footer_nav li a {
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .dep_det_bx {
+        padding: 15px;
+    }
+
+    .header_lang {
+        text-align: left;
+    }
+
+    .dwnlod_bx {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .dwnlod_bx_btn {
+        padding-bottom: 20px;
+    }
+
+    .deposite_sidebar, .dep_det_bx {
+        margin-top: 20px
+    }
+
+    .dep_det_inr_btn {
+        margin-right: 4px;
+    }
+
+    .dep_det_inr_bx input[type="text"] {
+        width: 100% !important;
+        margin-left: 0 !important;
+
+    }
+
+    .header_form form {
+        /*display: none;*/
+    }
+
+    /*.deposite-label-1{
+      margin-right: 110px !important;
+    }*/
+    .deposite-select {
+        margin-bottom: 15px;
+    }
+
+    .dep_det_bx h3 {
+        text-align: center;
+    }
+
+    .menu {
+        background: #22232b !important;
+        width: 200px;
+        display: block;
+        position: fixed;
+        background: none;
+        z-index: 10;
+        top: 0;
+        right: -200px;
+        height: 100%;
+        transition: .5s;
+        overflow-y: auto;
+    }
+
+    nav {
+        margin: 0;
+        background: none;
+    }
+
+    .main_navbar {
+        /*display: none;*/
+    }
+
+    .menu li {
+        display: block;
+        margin: 0;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+
+
+    .responsive_nav {
+        display: block;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .join_box {
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 30px;
+    }
+
+    .join_box:nth-child(2n) {
+        border-right: none;
+    }
+
+    .user_stati {
+        margin-top: 30px;
+    }
+
+    .user_stati_time h4 {
+        text-align: right;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+
+    .footer_nav li {
+        margin-bottom: 10px;
+    }
+
+    .transaction-history {
+        margin-left: -10px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        text-align: center;
+    }
+
+    .logo img {
+        bottom: 0;
+    }
+
+    .header_lang {
+        text-align: left;
+    }
+
+    .join_box {
+        border-right: none;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .header_form form input, button {
+        margin-bottom: 10px;
+    }
+}
