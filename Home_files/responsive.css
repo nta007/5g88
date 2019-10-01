@@ -77,4 +77,15 @@
         z-index: 99;
         float: right;
     }
+
+    .gallery {
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    .gallery .pics {
+        width: 46%;
+        float: left;
+        margin: 2%;
+    }
 }
