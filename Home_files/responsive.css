@@ -2,10 +2,10 @@
     #wallet-applet {
         position: fixed;
         z-index: 999;
-        background: #123;
+        background: white;
         padding: 10px;
-        left: -80%;
-        width: 80%;
+        left: -50%;
+        width: 50%;
         transition: all 0.5s;
     }
 
@@ -32,6 +32,8 @@
         display: block;
         border-right: none;
         padding: 3px 7px;
+        -webkit-text-fill-color: black;
+        background: none;
     }
 
     #wallet-applet .pull-right {
@@ -42,10 +44,12 @@
         position: absolute;
         top: 5px;
         right: 15px;
+        color: black;
     }
 
     #wallet-applet p.pull-right {
-        padding: 0 7px
+        padding: 0 7px;
+        color: black;
     }
 
     .main_navbar {
@@ -58,7 +62,9 @@
         left: -100%;
         /*background: rgba(0, 0, 0, 0.5);*/
     }
-
+    .gallery .pics:nth-child(2n) {
+        float: right;
+    }
     .main_navbar .menu {
         width: 100%;
         position: unset;
@@ -87,5 +93,10 @@
         width: 46%;
         float: left;
         margin: 2%;
+        margin-bottom: 2% !important;
+        flex: 1 1 50%;
+    }
+    .jackpot .odometer {
+        font-size: 24px;
     }
 }

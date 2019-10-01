@@ -13,4 +13,14 @@ $(document).ready(function () {
             $("body").attr("style",'over')
         }*/
     });
+
+    var el = document.querySelector('.odometerx');
+
+    od = new Odometer({
+        el: el,
+        value: 153048561,
+        format: ',ddd',
+        theme: 'slot-machine'
+    });
+    od.update(153048562)
 });
