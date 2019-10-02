@@ -61,7 +61,11 @@
     }
 
     .main_navbar.show {
-        height: 100% !important;
+        height: auto !important;
+    }
+
+    .menu li a {
+        padding: 10px !important;
     }
 
     .gallery .pics:nth-child(2n) {
