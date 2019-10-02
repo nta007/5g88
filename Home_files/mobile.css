@@ -29,6 +29,10 @@
         align-items: center;
     }
 
+    .menu ul.sub-menu.show {
+        display: block;
+    }
+
     .menu ul.sub-menu {
         display: none;
         opacity: 1;

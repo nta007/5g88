@@ -14,14 +14,20 @@ $(document).ready(function () {
         }*/
     });
 
-    // let show = false;
+    let show = false;
+    let prev = null;
     $(".menu-item a").click(function (e) {
         if ($(this).parent().find(".sub-menu") !== null) {
-            // if (!show)
-            $(this).parent().find(".sub-menu").show();
-            // else
-            //     $(this).parent().find(".sub-menu").hide();
-            // show = !show;
+            $(this).parent().find(".sub-menu").toggleClass("show");
+            /*if (prev !== null && prev !== e.target)
+                show = false;
+
+            if (!show)
+                $(this).parent().find(".sub-menu").show();
+            else
+                $(this).parent().find(".sub-menu").hide();
+            show = !show;
+            prev = e.target;*/
             return false;
         }
     });
